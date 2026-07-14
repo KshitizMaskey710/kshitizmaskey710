@@ -1,0 +1,30 @@
+title: Kshitiz Maskey
+description: Customer Success, delivery leadership, Agile enablement, and governance.
+url: ""
+baseurl: ""
+lang: en
+timezone: Asia/Kathmandu
+permalink: /:slug/
+linkedin_url: https://www.linkedin.com/in/kshitizmaskey
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      category_label: Blog
+      related:
+        - title: Explore my expertise
+          url: /expertise/
+        - title: Browse all articles
+          url: /blogs/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _templates

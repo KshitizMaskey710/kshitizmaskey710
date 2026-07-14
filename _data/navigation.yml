@@ -1,0 +1,10 @@
+- label: Home
+  url: /
+- label: About
+  url: /about/
+- label: Expertise
+  url: /expertise/
+- label: Blogs
+  url: /blogs/
+- label: Contact
+  url: /contact/

@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% include hero.html %}
+<div class="profile-content">{{ content }}</div>
+{% if page.cards %}<section class="section section--muted"><div class="shell">{% include card-grid.html cards=page.cards %}</div></section>{% endif %}
+{% if page.related %}<div class="shell">{% include related-links.html %}</div>{% endif %}

@@ -1,0 +1,8 @@
+<section class="hero">
+  <div class="shell hero__content">
+    {% if include.back_url %}<a class="back-link" href="{{ include.back_url | relative_url }}">← {{ include.back_label | default: 'Back' }}</a>{% endif %}
+    <p class="eyebrow">{{ include.eyebrow | default: page.eyebrow }}</p>
+    <h1>{{ include.title | default: page.title }}</h1>
+    {% if include.lede or page.description %}<p class="lede">{{ include.lede | default: page.description }}</p>{% endif %}
+  </div>
+</section>

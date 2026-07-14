@@ -1,0 +1,10 @@
+<figure class="visual-panel">
+  <div>
+    <p class="eyebrow">{{ include.label }}</p>
+    <h2>{{ include.title }}</h2>
+  </div>
+  <ul>
+    {% for item in include.items %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>
