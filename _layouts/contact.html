@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% include hero.html %}
+<article class="shell prose page-content">{{ content }}</article>
+{% for section in page.contact_sections %}
+  <section class="section{% cycle ' section--muted', '' %}"><div class="shell"><p class="eyebrow">{{ section.label }}</p><h2>{{ section.title }}</h2>{% include card-grid.html cards=section.cards compact=true %}</div></section>
+{% endfor %}

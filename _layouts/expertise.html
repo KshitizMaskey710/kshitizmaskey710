@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% include hero.html %}
+<article class="shell prose page-content">{{ content }}</article>
+{% for section in page.sections %}
+  <section class="section{% cycle '', ' section--muted' %}" id="{{ section.id }}">
+    <div class="shell section-grid">
+      <header><p class="eyebrow">{{ section.label }}</p><h2>{{ section.title }}</h2><p>{{ section.intro }}</p></header>
+      {% include card-grid.html cards=section.cards compact=true %}
+    </div>
+  </section>
+{% endfor %}
+{% if page.related %}<div class="shell">{% include related-links.html %}</div>{% endif %}

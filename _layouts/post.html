@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% include hero.html back_url='/blogs/' back_label='Back to Blogs' %}
+<div class="shell">{% include article-meta.html %}</div>
+<article class="shell prose article-content">
+  {% if page.visual %}{% include visual-panel.html label=page.visual.label title=page.visual.title items=page.visual.items caption=page.visual.caption %}{% endif %}
+  {{ content }}
+</article>
+{% if page.related %}<div class="shell">{% include related-links.html %}</div>{% endif %}
